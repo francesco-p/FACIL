@@ -4,6 +4,7 @@ from .lenet import LeNet
 from .vggnet import VggNet
 from .resnet32 import resnet32
 from .ovit_tiny_16_augreg_224 import OVit_tiny_16_augreg_224
+from .vit_tiny_16_augreg_224 import Vit_tiny_16_augreg_224
 
 
 # available torchvision models
@@ -19,7 +20,7 @@ tvmodels = ['alexnet',
             'wide_resnet50_2', 'wide_resnet101_2'
             ]
 
-allmodels = tvmodels + ['resnet32', 'LeNet', 'VggNet', "OVit_tiny_16_augreg_224"]
+allmodels = tvmodels + ['resnet32', 'LeNet', 'VggNet', "OVit_tiny_16_augreg_224", "Vit_tiny_16_augreg_224"]
 
 
 def set_tvmodel_head_var(model):
